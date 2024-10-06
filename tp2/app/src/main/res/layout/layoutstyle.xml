@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Font and Size App"
+        android:textSize="45sp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:text="Text Size"
+        android:textColor="#562F9C"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="30dp"
+            android:text="Italic"
+            android:width="150dp"
+            android:textColor="#562F9C"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="40dp"
+            android:width="150dp"
+            android:text="Bold"
+            android:textColor="#562F9C"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <TextView
+
+            android:id="@+id/textView4"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"
+            android:text="«We have developed speed, but we have shut ourselves in. Machinery that gives abundance has left us in want. Our knowledge as made us cynical ; our cleverness, hard and unkind. We think too much and feel too little. More than machinery we need humanity. More than cleverness, we need kindness and gentleness. Without these qualities, life will be violent and all will be lost.»" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
