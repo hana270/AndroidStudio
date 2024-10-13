@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Font and Size App"
+        android:textSize="45sp"
+        android:layout_gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/textsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="50dp"
+        android:text="Text Size"
+        android:textColor="#562F9C"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+
+        <EditText
+            android:id="@+id/inputTaille"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:fontFamily="cursive"
+            android:hint="saisir la taille ici"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnvalider"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5F126C"
+            android:text="Valider"
+            android:textColor="#EBE8F1"
+            android:textColorHighlight="#B4570505"
+            android:textColorHint="#BE18DA"
+            android:textColorLink="#3F51B5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="30dp"
+            android:text="Italic"
+            android:width="150dp"
+            android:textColor="#562F9C"
+            />
+
+        <Button
+            android:id="@+id/bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="40dp"
+            android:width="150dp"
+            android:text="Bold"
+            android:textColor="#562F9C"
+            />
+
+    </LinearLayout>
+
+
+        <TextView
+
+            android:id="@+id/paragraph"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="@string/pargraph">
+
+        </TextView>
+
+
+</LinearLayout>

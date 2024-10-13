@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="0dp"
+        tools:layout_editor_absoluteY="100dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Titre de l'application -->
+
+        <!-- Champs pour saisir les entiers -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Calculatrice"
+            android:textAlignment="center"
+            android:textColor="#FF9800"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/texte1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:hint="Entier 1"
+                android:inputType="number"
+                android:textSize="23sp" />
+
+            <EditText
+                android:id="@+id/texte2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="Entier 2"
+                android:inputType="number"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <!-- Groupe de boutons radio pour les opérations -->
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="61dp"
+                android:layout_height="53dp"
+                android:layout_marginRight="35dp"
+                android:checked="false"
+
+                android:duplicateParentState="false"
+                android:text="+"
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginRight="35dp"
+                android:text="-"
+
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/r3"
+                android:layout_width="59dp"
+                android:layout_height="52dp"
+                android:layout_marginRight="35dp"
+                android:text="*"
+
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/r4"
+                android:layout_width="58dp"
+                android:layout_height="54dp"
+                android:layout_marginRight="5dp"
+                android:text="/"
+
+                android:textSize="30dp" />    </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="="
+            android:textColor="#0A151E"
+            android:textColorHighlight="#230A0A"
+            android:textColorHint="#451111"
+            android:textColorLink="#F44336"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+
+            android:accessibilityLiveRegion="polite"
+            android:ems="10"
+            android:enabled="false"
+
+            android:fadeScrollbars="false"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Résultat"
+            android:inputType="number"
+            android:maxLines="@android:integer/config_longAnimTime"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
