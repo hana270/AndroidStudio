@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23000000">
+
+    <!-- Zone Couleur au milieu -->
+    <TextView
+        android:id="@+id/zoneColore"
+        android:layout_width="82dp"
+        android:layout_height="85dp"
+        android:layout_centerInParent="true"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text="Couleur"
+        android:textColor="#FAF8F8"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@id/zoneColore"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#8E0202"
+        android:onClick="rouge"
+        android:text="Rouge"
+        android:textColor="#F8F5F5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/zoneColore"
+        android:background="#4CAF50"
+        android:onClick="vert"
+        android:text="Vert"
+        android:textColor="#FBF9F9"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_toLeftOf="@id/zoneColore"
+        android:background="#3F51B5"
+        android:onClick="bleu"
+        android:text="Bleu"
+        android:textColor="#EDE9E9"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/zoneColore"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FFC107"
+        android:onClick="jaune"
+        android:text="Jaune"
+        android:textColor="#F4EFEF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

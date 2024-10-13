@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="209dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Money Converter"
+        android:textColor="#BC1B1717"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="88dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:layout_constraintVertical_bias="0.37"
+        tools:layout_editor_absoluteX="1dp">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="271dp">
+
+
+            <RadioButton
+                android:id="@+id/dinartoeuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+
+                android:foregroundGravity="center"
+                android:longClickable="false"
+                android:shadowColor="#590F0F"
+                android:text="Dinar -> Euro"
+                android:textColor="#081143"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/eurotodinar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Euro -> Dinar"
+                android:textColor="#202750"
+                android:textSize="16sp" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="313dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#121C20"
+        android:textColorHint="#151A35"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#050209"
+        android:shadowColor="@color/purple_500"
+        android:text="Convert"
+        android:textColor="#F2F2F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="64dp"
+        android:text="The result will be displayed here"
+        android:textColor="#020930"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert" />
+
+</android.support.constraint.ConstraintLayout>
