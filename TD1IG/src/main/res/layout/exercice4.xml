@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercice4">
+
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/mot1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="Entrer le premier mot"
+        android:textColorLink="#DF0707"
+        android:textSize="30dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/mot2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer le deuxieme mot"
+        android:textColorLink="#E40505"
+        android:textSize="30dp">
+
+    </EditText>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginTop="20dp"
+     >
+    <CheckBox
+        android:id="@+id/espace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </CheckBox>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Ajouter un espace"
+         android:textColor="#000000"
+         android:textSize="20dp"
+         android:textStyle="bold">
+
+     </TextView>
+</LinearLayout>
+    <Button
+        android:id="@+id/btnconcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Concaténer"
+        android:onClick="concat"
+        >
+
+    </Button>
+</LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
