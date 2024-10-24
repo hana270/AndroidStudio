@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+   >
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer votre nom ..."
+        android:layout_marginTop="160dp"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer votre age ..."
+        android:layout_marginTop="10dp"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/sitew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer votre site web ..."
+        android:layout_marginTop="10dp"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/numtel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer votre numero de telephone..."
+        android:layout_marginTop="10dp"
+        >
+    </EditText>
+    <Button
+        android:id="@+id/btnV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/purple_700"
+        >
+
+    </Button>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
