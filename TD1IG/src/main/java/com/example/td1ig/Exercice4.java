@@ -18,7 +18,7 @@ public class Exercice4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.exercice4); // Assurez-vous que le nom du layout est correct
+        setContentView(R.layout.exercice4); 
 
         mot1 = findViewById(R.id.mot1);
         mot2 = findViewById(R.id.mot2);
