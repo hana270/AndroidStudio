@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222525">
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_above="@id/imageSplash"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="YourRide"
+        android:textColor="#F4F0F0"
+        android:textSize="60dp"
+
+
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageSplash"
+
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="YourWay"
+        android:textColor="#F4F0F0"
+        android:textSize="50dp"
+
+
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageSplash"
+        android:layout_width="700dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#000000"
+        android:src="@drawable/suzuki" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSplash"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:layout_marginTop="40px"
+        android:backgroundTint="#F3F3F3"
+        android:shadowColor="#8A8787"
+
+        android:text="Let's Go"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:verticalScrollbarPosition="defaultPosition" />
+
+
+
+</RelativeLayout>

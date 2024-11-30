@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212" >
+
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/login" />
+
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Welcome Back!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Email"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:textColorHint="#B0B0B0"
+        android:textColor="#FFFFFF"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/email_field"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Password"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:textColorHint="#B0B0B0"
+        android:textColor="#FFFFFF"
+        android:inputType="textPassword" />
+
+    <!-- Texte pour "Mot de passe oublié ?" -->
+    <TextView
+        android:id="@+id/forgot_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_field"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:text="Forgot password?"
+        android:textColor="#1E90FF"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/forgot_password_text"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Sign In"
+        android:background="@drawable/bouton_background"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:elevation="4dp" />
+
+
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textColor="#B0B0B0"
+        android:textSize="16sp" />
+
+
+
+    <Button
+        android:id="@+id/google_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/or_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Sign in with Google"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <!-- Texte pour redirection vers l'inscription -->
+    <TextView
+        android:id="@+id/signup_redirect_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Don't have an account? "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/registrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/signup_redirect_text"
+        android:layout_below="@id/google_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Sign Up"
+        android:textColor="#12636E"
+        android:textStyle="bold"
+
+        android:textSize="20sp"
+        android:clickable="true"
+        android:focusable="true"
+      />
+
+
+
+</RelativeLayout>
